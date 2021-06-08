@@ -64,8 +64,8 @@
 }
 
 @mixin icon-round($diameter) {
-  border: 1px solid;
-  border-radius: 50%;
+  // border: 1px solid;
+  // border-radius: 50%;
   width: $diameter;
   height: $diameter;
 }

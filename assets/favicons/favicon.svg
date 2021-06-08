@@ -1,0 +1,5 @@
+<svg width="256" height="256" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+  <path pointer-events="none" d="M-1-1h258v258H-1z" />
+  <text fill="#fff" stroke="#000" stroke-width="0" x="40" y="180"
+    font-size="200" font-family="'Times New Roman', Times, serif" pointer-events="all">w</text>
+</svg>

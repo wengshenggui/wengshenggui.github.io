@@ -6,6 +6,8 @@ layout: compress
 
 const resource = [
 
+  '{{ "/manifest.json" | relative_url }}',
+
   /* --- CSS --- */
   '{{ "/assets/css/style.css" | relative_url }}',
 
@@ -27,7 +29,7 @@ const resource = [
   {% endfor %}
 
   /* --- Favicons --- */
-  {% assign favicon_path = "/assets/img/favicons" | relative_url %}
+  {% assign favicon_path = "/assets/favicons" | relative_url %}
 
   '{{ favicon_path }}/android-chrome-192x192.png',
   '{{ favicon_path }}/android-chrome-512x512.png',
@@ -36,18 +38,12 @@ const resource = [
   '{{ favicon_path }}/favicon-32x32.png',
   '{{ favicon_path }}/favicon.ico',
   '{{ favicon_path }}/mstile-150x150.png',
-  '{{ favicon_path }}/site.webmanifest',
   '{{ favicon_path }}/browserconfig.xml'
 
 ];
 
 /* The request url with below domain will be cached */
 const allowedDomains = [
-  {% if site.google_analytics.id != '' %}
-    'www.googletagmanager.com',
-    'www.google-analytics.com',
-  {% endif %}
-
   '{{ site.url | split: "//" | last }}',
 
   'fonts.gstatic.com',

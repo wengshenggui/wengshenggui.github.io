@@ -4,8 +4,8 @@
 
 /* --- ↓ width and height ---- */
 
-$tab-height: 3.2rem;
-$tab-cursor-height: 1.6rem;
+$tab-height: 3rem;
+$tab-cursor-height: $tab-height / 2;
 
 $sidebar-width-small: 210px;
 $sidebar-width-medium: 260px;
