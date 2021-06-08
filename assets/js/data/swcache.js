@@ -13,6 +13,7 @@ const resource = [
 
   /* --- JavaScripts --- */
   {% assign js_path = "/assets/js" | relative_url %}
+  '{{ js_path }}/dist/commons.min.js',
   '{{ js_path }}/dist/home.min.js',
   '{{ js_path }}/dist/page.min.js',
   '{{ js_path }}/dist/post.min.js',
@@ -31,14 +32,9 @@ const resource = [
   /* --- Favicons --- */
   {% assign favicon_path = "/assets/favicons" | relative_url %}
 
-  '{{ favicon_path }}/android-chrome-192x192.png',
-  '{{ favicon_path }}/android-chrome-512x512.png',
-  '{{ favicon_path }}/apple-touch-icon.png',
-  '{{ favicon_path }}/favicon-16x16.png',
-  '{{ favicon_path }}/favicon-32x32.png',
   '{{ favicon_path }}/favicon.ico',
-  '{{ favicon_path }}/mstile-150x150.png',
-  '{{ favicon_path }}/browserconfig.xml'
+  '{{ favicon_path }}/favicon.png',
+  '{{ favicon_path }}/favicon.svg'
 
 ];
 
