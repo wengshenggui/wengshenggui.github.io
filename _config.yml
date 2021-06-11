@@ -5,6 +5,7 @@
 name: weng
 # change to your email address
 email: example@doamin.com
+repository: wengshenggui/wengshenggui.github.io
 
 # Import the theme
 theme:
@@ -127,6 +128,7 @@ compress_html:
     envs: [development]
 
 exclude:
+  - vendor
   - '*.gem'
   - '*.gemspec'
   - tools
