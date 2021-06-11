@@ -13,6 +13,9 @@ theme:
 # change below value to '/projectname'.
 baseurl: ''
 
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: ''
+
 # the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
 lang: en-US
 
@@ -30,26 +33,6 @@ description: >-
   A minimal, portfolio, sidebar,
   bootstrap Jekyll theme with responsive web design
   and focuses on text presentation.
-
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
-
-# change to your github username
-github:
-  username: wengshenggui
-
-# change to your twitter username
-twitter:
-  username: twitter_username
-
-social:
-  links:
-    # The first element serves as the copyright owner's link
-    - https://github.com/wengshenggui       # change to your github homepage
-    - https://twitter.com/username      # change to your twitter homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 # Prefer color scheme setting.
 #
@@ -96,6 +79,7 @@ kramdown:
 collections:
   tabs:
     output: true
+    # jekyll 4.0
     sort_by: order
 
 
@@ -153,7 +137,6 @@ exclude:
   - node_modules
   - package.json
   - Gemfile
-  - feed.xml
 
 jekyll-archives:
   enabled: [categories, tags]

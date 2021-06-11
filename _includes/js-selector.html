@@ -46,7 +46,6 @@
 {% if jekyll.environment == 'production' %}
   <!-- PWA -->
   <script defer src="{{ '/app.js' | relative_url }}"></script>
-
+{% else %}
+  <script defer src="{{ '/info.js' | relative_url }}"></script>
 {% endif %}
-
-<script defer src="{{ '/info.js' | relative_url }}"></script>

@@ -1,5 +1,0 @@
----
-permalink: /info.json
----
-
-{{ site | jsonify }}
