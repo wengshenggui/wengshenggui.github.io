@@ -25,7 +25,7 @@ function filterHtml(info, deep = 0) {
   return info
 }
 
-const _siteInfo = {{ site | jsonify }}
+const _siteInfo = Object.assign({}, {{ site | jsonify }})
 
 // console.log(_siteInfo)
 filterHtml(_siteInfo)

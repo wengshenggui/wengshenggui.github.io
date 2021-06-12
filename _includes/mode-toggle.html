@@ -51,17 +51,17 @@
 
     setDark() {
       $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+      localStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
     }
 
     setLight() {
       $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+      localStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
     }
 
     clearMode() {
       $('html').removeAttr(ModeToggle.MODE_KEY);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
+      localStorage.removeItem(ModeToggle.MODE_KEY);
     }
 
     get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); }
@@ -74,7 +74,7 @@
 
     get hasMode() { return this.mode != null; }
 
-    get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); }
+    get mode() { return localStorage.getItem(ModeToggle.MODE_KEY); }
 
     /* get the current mode on screen */
     get modeStatus() {
